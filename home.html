@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<!-- Screen 1 -->
+<div class="card" id="screen1">
+    <h1>Happy Valentine's Day!</h1>
+    <img src="snoopy.png" class="snoopy">
+    <p>May surprise Mini Quiz ako😁😂 quiz na hindi nagrerequire ng review HAHAHAHA!😂 Pero answer this honestly hehe</p>
+    <button onclick="showScreen2()">Continue</button>
+    <button id="noBtn" onclick="handleNoClick()">Ayaw ko po!</button>
+</div>
+
+<!-- Screen 2 -->
+<div class="card hidden" id="screen2">
+<h1>Question 1 </h1>    
+<p>Are you available tomorrow after your class?</p>
+    <button onclick="showScreen3()">Yes po😁!!</button>
+    <button onclick="showScreen6()">No po😔</button>
+</div>
+
+<!-- Screen 3 -->
+<div class="card hidden" id="screen3">
+<h1>Question 2 </h1>
+<p>Will you be my Valentine po?</p>
+    <button onclick="showScreen4()">Yes hehe😁!!</button>
+    <button onclick="showScreen6()">No😔</button>
+</div>
+
+<!-- Screen 4  -->
+<div class="card hidden" id="screen4">
+<h1>Question 3 </h1>
+<p>Let's eat tomorrow?😁</p>
+    <button onclick="showScreen5()">Yes hehe😁!!</button>
+    <button onclick="showScreen7()">Pagod po😔</button>
+    <button onclick="showScreen7()">May gagawin po ako😔</button>
+</div>
+
+<!-- Screen 5 -->
+<div class="card hidden" id="screen5">
+<h1>YEY!!😁 Message me if you have a place in mind hehe. See you po!!</h1>
+    <button onclick="showScreen6()">Okayyy!!</button>
+</div>
+
+<!-- Final Screen -->
+<div class="card hidden" id="screen6">
+<h1>Thank you for answering this surprise mini quiz!</h1>
+<h2>Score: 100/100👏</h2>
+<p>See you on our next mini quiz!! HAHAHAHA😂</p>
+</div>
+
+<!-- Screen 6 -->
+<div class="card hidden" id="screen7">
+<h1>Okayy po!! No problemm hehe. Pahinga muna po tayo!!</h1>
+<button onclick="showScreen5()">Okayyy po!!</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
